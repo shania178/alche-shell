@@ -1,4 +1,3 @@
 #!/bin/bash
-touch tmp
 cd /tmp/
 mkdir my_first_directory

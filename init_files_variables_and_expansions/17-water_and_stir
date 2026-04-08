@@ -1,0 +1,2 @@
+#!/bin/bash
+printf '%s\n' "$(tr 'water' 01234 <<<"$WATER" | bc -lq <<<"obase=10;ibase=5;$(tr 'stir' 01234 <<<"$STIR");ibase=10;obase=8;last+$(tr 'stir' 01234 <<<"$WATER"))" | tr '01234567' 'behlnort')"
